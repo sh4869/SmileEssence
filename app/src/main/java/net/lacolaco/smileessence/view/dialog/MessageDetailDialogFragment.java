@@ -210,11 +210,11 @@ public class MessageDetailDialogFragment extends DialogFragment implements View.
     }
 
     private MediaEntity[] getMediaEntities(DirectMessage message) {
-        if (message.getExtendedMediaEntities().length == 0) {
+        if (message.getMediaEntities().length == 0) {
             // direct message's media is contained also in url entities.
             return new MediaEntity[0];
         } else {
-            return message.getExtendedMediaEntities();
+            return message.getMediaEntities();
         }
     }
 

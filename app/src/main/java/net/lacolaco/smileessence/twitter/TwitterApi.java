@@ -64,6 +64,7 @@ public class TwitterApi {
 
     public static Configuration getConf(String consumerKey, String consumerSecret) {
         ConfigurationBuilder conf = new ConfigurationBuilder();
+        conf.setTweetModeExtended(true);
         conf.setOAuthConsumerKey(consumerKey);
         conf.setOAuthConsumerSecret(consumerSecret);
         conf.setDebugEnabled(true);

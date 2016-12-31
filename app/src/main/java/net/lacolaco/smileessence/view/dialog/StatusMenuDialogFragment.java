@@ -133,7 +133,7 @@ public class StatusMenuDialogFragment extends MenuDialogFragment {
                 commands.add(new CommandOpenURL(activity, urlEntity.getExpandedURL()));
             }
         }
-        for (MediaEntity mediaEntity : status.getExtendedMediaEntities().length == 0 ? status.getMediaEntities() : status.getExtendedMediaEntities()) {
+        for (MediaEntity mediaEntity : status.getMediaEntities().length == 0 ? status.getMediaEntities() : status.getMediaEntities()) {
             commands.add(new CommandOpenURL(activity, mediaEntity.getMediaURL()));
         }
     }

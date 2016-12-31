@@ -26,6 +26,7 @@ package net.lacolaco.smileessence.viewmodel;
 
 import android.app.Activity;
 import android.net.Uri;
+import android.provider.MediaStore;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,8 +54,15 @@ import net.lacolaco.smileessence.view.dialog.DialogHelper;
 import net.lacolaco.smileessence.view.dialog.StatusDetailDialogFragment;
 import net.lacolaco.smileessence.view.dialog.UserDetailDialogFragment;
 import net.lacolaco.smileessence.view.listener.ListItemClickListener;
-
-import twitter4j.*;
+import net.lacolaco.smileessence.logging.Logger;
+import twitter4j.Status;
+import twitter4j.UserMentionEntity;
+import twitter4j.HashtagEntity;
+import twitter4j.MediaEntity;
+import twitter4j.URLEntity;
+import twitter4j.SymbolEntity;
+import twitter4j.User;
+import twitter4j.Twitter;
 
 import java.util.ArrayList;
 import java.util.Date;

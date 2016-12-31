@@ -128,7 +128,7 @@ public class MessageMenuDialogFragment extends MenuDialogFragment {
                 commands.add(new CommandOpenURL(activity, urlEntity.getExpandedURL()));
             }
         }
-        for (MediaEntity mediaEntity : message.getExtendedMediaEntities().length == 0 ? message.getMediaEntities() : message.getExtendedMediaEntities()) {
+        for (MediaEntity mediaEntity : message.getMediaEntities().length == 0 ? message.getMediaEntities() : message.getMediaEntities()) {
             commands.add(new CommandOpenURL(activity, mediaEntity.getMediaURL()));
         }
     }

@@ -251,10 +251,10 @@ public class StatusDetailDialogFragment extends DialogFragment implements View.O
 
 
     private MediaEntity[] getMediaEntities(Status status) {
-        if (status.getExtendedMediaEntities().length == 0) {
+        if (status.getMediaEntities().length == 0) {
             return status.getMediaEntities();
         } else {
-            return status.getExtendedMediaEntities();
+            return status.getMediaEntities();
         }
     }
 
